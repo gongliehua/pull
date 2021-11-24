@@ -1,0 +1,12 @@
+{
+    "Homepage": "http://example.com",
+    "Port": ":9001",
+    "Token": "123456",
+    "Repo": [
+        {
+            "Slug": "test",
+            "Dir": "D:\\WWW\\test",
+            "Branch": "master"
+        }
+    ]
+}
