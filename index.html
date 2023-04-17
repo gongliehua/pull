@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>git pull</title>
+	<style>
+		body {color: #333;font-size: 16px;margin: 10px 0 0;padding: 0;}
+		nav,footer {text-align: center;}
+		nav h1 {font-weight: normal;}
+		iframe,textarea,fieldset {max-width: 850px;height: 200px;border: 1px solid rgb(108,108,108);display: block;padding: 0;margin: 0;margin: 0 auto;margin-bottom: 10px;}
+		fieldset {padding: 20px;box-sizing: border-box;}
+		fieldset div {margin: 5px 0;}
+		fieldset div label {display: inline-block;width: 4em;}
+		fieldset div select {width: 226px;height: 28px;border: 1px solid #333;}
+		fieldset div input[type="text"],fieldset div input[type="password"] {width: 220px;height: 22px;padding: 2px;border: 1px solid #333;}
+		fieldset div input[type="submit"] {width: 5em;padding: 4px 0;}
+		p {text-align: center;line-height: 1.15;margin: 0;padding: 2px 0;}
+	</style>
+	<script>var version = "v1.0.1";</script>
+	<!-- nohup ./pull.bin -c ./config.json>/dev/nul 2>&1 & -->
+</head>
+<body>
+	<form action="http://112.125.24.96:8088/pull" method="post" target="content">
+		<fieldset>
+			<legend>请求参数</legend>
+			<div>
+				<label for="">Repo</label>
+				<select name="slug" id="">
+					<option value="prod_official">Prod-官网</option>
+					<option value="local_official">Local-官网</option>
+				</select>
+			</div>
+			<div>
+				<label for="">Token</label>
+				<input type="password" name="token">
+			</div>
+			<div>
+				<label for=""></label>
+				<input type="submit">
+			</div>
+		</fieldset>
+	</form>
+	<p>
+		&copy; <script>document.write(new Date().getFullYear())</script>
+		<a href="" target="_blank" style="text-decoration: none;"></a>
+		当前版本: <script>document.write(version)</script>
+	</p>
+</body>
+</html>
